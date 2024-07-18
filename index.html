@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>四角画像メーカー</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>四角画像メーカー</h1>
+    <div class="container">
+        <div class="form-group">
+            <label for="width">幅 (px):</label>
+            <input type="number" id="width" min="1" max="200" value="100">
+        </div>
+        <div class="form-group">
+            <label for="height">高さ (px):</label>
+            <input type="number" id="height" min="1" max="200" value="100">
+        </div>
+        <div class="form-group">
+            <label for="color">色:</label>
+            <input type="color" id="color" value="#388DF9">
+        </div>
+        <div class="form-group">
+            <button id="randomButton">ランダム</button>
+        </div>
+        <div class="form-group">
+            <label for="format">ダウンロード形式:</label>
+            <select id="format">
+                <option value="svg">SVG</option>
+                <option value="png">PNG</option>
+                <option value="jpg">JPG</option>
+                <option value="gif">GIF</option>
+            </select>
+            <button id="downloadButton">ダウンロード</button>
+        </div>
+        <div class="form-group">
+            <button id="shareButton">共有URL生成</button>
+        </div>
+    </div>
+    <div class="preview" id="preview"></div>
+    <script src="script.js"></script>
+</body>
+</html>
