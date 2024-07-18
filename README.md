@@ -1,4 +1,4 @@
-# 四角メーカー
+# 四角画像メーカー
 ただの四角を生成できるサイトです。
 
 url:https://scratch-kaisetu.github.io/Square-Maker/
